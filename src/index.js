@@ -796,7 +796,7 @@ class PhoneInput extends React.Component {
           data-flag-key={`flag_no_${index}`}
           className={itemClasses}
           data-dial-code='1'
-          tabIndex='0'
+          tabIndex='-1'
           data-country-code={country.iso2}
           onClick={() => this.handleFlagItemClick(country)}
         >
@@ -913,7 +913,7 @@ class PhoneInput extends React.Component {
           id='flag-dropdown'
           style={this.props.buttonStyle}
           ref={el => this.dropdownContainerRef = el}
-          tabIndex='0'
+          tabIndex='-1'
           role='button'
         >
           {renderStringAsFlag ?
